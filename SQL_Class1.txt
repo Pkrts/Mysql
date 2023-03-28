@@ -10,3 +10,46 @@ create DATABASE test_new;
 show DATABASES; --to show all database
 
 drop DATABASE test_new; ---to delete the DATABASE.
+
+--- Command to create a TABLE
+
+Create table if not exists employee
+(
+    id INT,
+    name VARCHAR(50)
+);
+
+---to show the tables inside the database??
+show tables;
+
+---to show the create table command for employee table?? always try to write capital letter for important keyword (mysql is case INSENSITIVE juss for good habit).
+SHOW CREATE table employee;
+
+---to delete a table
+DROP TABLE employee;
+
+CREATE TABLE IF NOT EXISTS employee
+(
+    id INT,
+    name VARCHAR(50),
+    salary DOUBLE,
+    hiring_date DATE
+);
+
+---syntax 1 to insert data into employee table??
+INSERT INTO employee VALUES(1,'Prakhar',10000,'2021-09-15');
+
+---syntax 2 to insert data into employee table?? supoose when we don't know the hiring date for RAHUL.
+INSERT INTO employee(salary,name,id) VALUES(20000,'RAHUL',2);
+
+---insert multiple rows using single insert statement??
+insert into employee VALUES(3,'ANMOL',11000,'2014-08-16'),(4,'SACHIN',15000,'2015-08-07'),(5,'PRATIK',10000,'2016-06-19');
+
+-- to see the details about the employee table.??
+select * from employee;
+
+-- when you want select the Specific COLUMN from a table??
+select id,name from employee;
+
+
+
