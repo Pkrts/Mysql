@@ -1,0 +1,12 @@
+---create database
+
+create DATABASE test;
+
+use test;
+
+create DATABASE test_new;
+
+
+show DATABASES; --to show all database
+
+drop DATABASE test_new; ---to delete the DATABASE.
