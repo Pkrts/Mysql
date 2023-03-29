@@ -120,6 +120,9 @@ create table orders
 );
 
 --- Differen between Drop & Truncate Command
+truncate will delete all the data but the structure remains.
+drop will delete all the data and structures also.
+delete will delete few data with wheere clause.
 
 select * from persons;
 truncate table persons;
